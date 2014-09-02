@@ -29,6 +29,7 @@ gem 'slim'
 
 group :test do
   gem 'rspec-rails'
+  gem 'capybara'
   gem 'mongoid-rspec'
 end
 
