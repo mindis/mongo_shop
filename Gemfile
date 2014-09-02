@@ -29,6 +29,8 @@ gem 'slim'
 
 gem 'simple_form'
 
+gem 'rails_utils'
+
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
