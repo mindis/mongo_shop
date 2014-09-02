@@ -27,6 +27,8 @@ gem 'spring',        group: :development
 gem 'mongoid'
 gem 'slim'
 
+gem 'simple_form'
+
 group :test do
   gem 'rspec-rails'
   gem 'capybara'
