@@ -1,9 +1,13 @@
 class ProductsController < ApplicationController
+  def new
+    @product = Product.new
+  end
+
   def create
     @product = Product.new(product_params)
 
     if @product.save
-      redirect_to products_url, notice: 'Product is created successfully.'
+      redirect_to new_product_url, notice: 'Product is created successfully.'
 
     else
       flash[:alert] = 'Failed to create product.'

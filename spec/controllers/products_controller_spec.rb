@@ -1,6 +1,21 @@
 require 'rails_helper'
 
 describe ProductsController do
+  describe 'GET #new' do
+    def do_request
+      get :new
+    end
+
+    context 'success' do
+      it 'renders :new template' do
+        do_request
+        expect(response).to render_template :new
+        expect(assigns(:product)).to_not be_nil
+      end
+    end
+
+  end
+
   describe 'POST #create' do
     def do_request
       post :create, product: product_params 
